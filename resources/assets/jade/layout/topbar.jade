@@ -1,0 +1,18 @@
+.topbar
+    a.logo-topbar(href="{{ url('/') }}")
+        img.img(src="{{ url('img/logo-topbar.png') }}", alt="BeeSurprised")
+        
+    nav.menu
+        ul.list
+            li.option
+                a.link(href="{{ url('/') }}") Inicio
+            li.option
+                a.link(href="{{ url('productos') }}") Productos
+            li.option
+                a.link(href="{{ url('regalos') }}") Regalos
+            li.option
+                a.link(href="{{ url('como-funciona') }}") Cómo funciona
+            li.option
+                a.link(href="{{ url('blog') }}") Blog
+            li.option
+                a.link(href="{{ url('contacto') }}") Contacto
