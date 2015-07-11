@@ -1,33 +1,34 @@
 footer.footer
 
-    .sitemap
-        h3.title Sitio
-        ul.sites
-            li.site
-                a.link(href="{{ url('/') }}") Inicio
-            li.site
-                a.link(href="{{ url('productos') }}") Productos
-            li.site
-                a.link(href="{{ url('como-funciona') }}") Cómo funciona
-            li.site
-                a.link(href="{{ url('blog') }}") Blog
-            li.site
-                a.link(href="{{ url('contacto') }}") Contacto
-                
-    
-    .copy
-        img.logo-footer(src="{{ url('img/logo-footer.png') }}")
-        &copy; 2015. BeeSurprised.
+    .content
+        .sitemap
+            h3.title Sitio
+            ul.sites
+                li.site
+                    a.link(href="{{ url('/') }}") Inicio
+                li.site
+                    a.link(href="{{ url('productos') }}") Productos
+                li.site
+                    a.link(href="{{ url('como-funciona') }}") Cómo funciona
+                li.site
+                    a.link(href="{{ url('blog') }}") Blog
+                li.site
+                    a.link(href="{{ url('contacto') }}") Contacto
+                    
         
-    .social
-        h3.title Redes sociales
-        ul.netwoks
-            li.network
-                a.link(href="#")
-                    img.img(src="{{ url('img/fb.png') }}")
-            li.network
-                a.link(href="#")
-                    img.img(src="{{ url('img/tw.png') }}")
-            li.network
-                a.link(href="#")
-                    img.img(src="{{ url('img/in.png') }}")
+        .copy
+            img.logo-footer(src="{{ url('img/logo-footer.png') }}")
+            .text &copy; 2015. BeeSurprised.
+            
+        .social
+            h3.title Redes sociales
+            ul.networks
+                li.network
+                    a.link(href="#")
+                        img.img(src="{{ url('img/fb.png') }}")
+                li.network
+                    a.link(href="#")
+                        img.img(src="{{ url('img/tw.png') }}")
+                li.network
+                    a.link(href="#")
+                        img.img(src="{{ url('img/in.png') }}")

@@ -8,7 +8,7 @@
     <li class="step"><img src="{{ url('img/step2.png') }}" class="icon"/>
       <div class="text">Escoge un plan</div>
     </li>
-    <li class="step"><img src="{{ url('img/step2.png') }}" class="icon"/>
+    <li class="step"><img src="{{ url('img/step3.png') }}" class="icon"/>
       <div class="text">Recíbelo en tu casa</div>
     </li>
   </ul>

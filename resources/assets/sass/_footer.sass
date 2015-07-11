@@ -1,0 +1,36 @@
+.footer
+    background: $brown
+    color: $white
+    width: 100%
+    .content
+        +clearfix
+        padding: 3rem 0
+        margin: 0 auto
+        .sitemap, .social, .copy
+            float: left
+            margin: 0 5rem
+            .title
+                display: inline-block
+                border-bottom: 2px solid $orange
+                margin-bottom: 1rem
+                +font-size(16px)
+        .sitemap
+            .sites
+                .site
+                    .link
+                        color: $white
+
+        .social
+            .networks
+                +clearfix
+                .network
+                    float: left
+                    margin-right: 1rem
+                    &:last-child
+                        margin: 0
+
+
+        .copy
+            text-align: center
+            .text
+                margin-top: 1rem

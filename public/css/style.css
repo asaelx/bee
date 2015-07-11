@@ -79,12 +79,240 @@ body {
   font-size: 14px; }
 
 /* General */
+* {
+  transition: all 0.3s ease; }
+
 html, body {
   position: relative;
   height: 100%;
   width: 100%; }
 
+.btn {
+  display: inline-block;
+  border-radius: 0.21429rem;
+  background: #F5A623;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem; }
+
+.section {
+  padding: 6rem 0;
+  border-top: 4px solid #F5A623; }
+  .section > .title {
+    color: #BD9655;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem; }
+
 .topbar {
-  background: #FFFFFF; }
-  .topbar .menu .list .option .link {
-    color: #FFFFFF; }
+  content: " ";
+  display: table;
+  clear: both;
+  background: #FFFFFF;
+  border-bottom: 4px solid #F5A623;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5; }
+  .topbar .logo-topbar {
+    float: left;
+    position: relative;
+    top: 0.8rem;
+    left: 1rem; }
+  .topbar .menu {
+    float: right; }
+    .topbar .menu .list {
+      content: " ";
+      display: table;
+      clear: both; }
+      .topbar .menu .list .option {
+        float: left; }
+        .topbar .menu .list .option .link {
+          display: block;
+          color: #F5A623;
+          text-transform: uppercase;
+          padding: 1.5rem 1rem; }
+          .topbar .menu .list .option .link.active, .topbar .menu .list .option .link:hover {
+            background: #F5A623;
+            color: #FFFFFF; }
+
+.slider {
+  position: relative;
+  overflow: auto;
+  min-height: 100%;
+  height: 100%;
+  min-width: 960px;
+  max-width: 100%;
+  width: 100%; }
+  .slider .list {
+    content: " ";
+    display: table;
+    clear: both;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+    .slider .list .slide {
+      float: left;
+      height: 100vh;
+      pointer-events: none;
+      overflow: hidden;
+      position: relative;
+      width: 10%; }
+      .slider .list .slide .bg {
+        min-width: 100%;
+        visibility: visible;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        min-height: 100%;
+        height: auto; }
+      .slider .list .slide .logo-slider {
+        position: absolute;
+        top: 50%;
+        left: 5rem;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%); }
+      .slider .list .slide .legend {
+        content: " ";
+        display: table;
+        clear: both;
+        background: rgba(245, 166, 35, 0.4);
+        position: absolute;
+        bottom: 6rem;
+        left: 0;
+        width: 100%;
+        padding: 4rem 3rem; }
+        .slider .list .slide .legend .text {
+          float: left;
+          font-size: 32px;
+          font-size: 2.28571rem;
+          color: #FFFFFF;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+          width: 50%; }
+        .slider .list .slide .legend .btn {
+          float: right;
+          font-size: 18px;
+          font-size: 1.28571rem; }
+  .slider .dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .slider .dots .dot {
+      float: left;
+      text-indent: -99999px;
+      display: block;
+      border: 2px solid #F5A623;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      height: 1rem;
+      width: 1rem;
+      margin: 0 0.4rem; }
+      .slider .dots .dot:hover {
+        cursor: pointer; }
+      .slider .dots .dot.active {
+        background: #F5A623; }
+
+.how .steps {
+  content: " ";
+  display: table;
+  clear: both;
+  margin: 0 auto; }
+  .how .steps .step {
+    float: left;
+    text-align: center;
+    margin: 0 3rem; }
+    .how .steps .step .text {
+      margin-top: 1rem;
+      color: #BD9655;
+      font-size: 18px;
+      font-size: 1.28571rem; }
+
+.boxes .plans {
+  content: " ";
+  display: table;
+  clear: both;
+  margin: 0 auto; }
+  .boxes .plans .plan {
+    float: left;
+    margin: 0 2rem;
+    position: relative; }
+    .boxes .plans .plan .title {
+      font-size: 20px;
+      font-size: 1.42857rem;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      text-align: center;
+      position: absolute;
+      top: 1rem;
+      width: 100%; }
+    .boxes .plans .plan .btn {
+      position: absolute;
+      bottom: 1rem;
+      right: -1rem;
+      font-size: 18px;
+      font-size: 1.28571rem; }
+
+.locals .brands {
+  content: " ";
+  display: table;
+  clear: both;
+  margin: 0 auto; }
+  .locals .brands .brand {
+    float: left;
+    margin: 0 1rem;
+    text-align: center; }
+    .locals .brands .brand .text {
+      margin-top: 1rem;
+      color: #BD9655;
+      font-size: 18px;
+      font-size: 1.28571rem; }
+
+.cta {
+  background: url(../img/cta-bg.jpg);
+  background-size: cover;
+  text-align: center; }
+  .cta .text {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-size: 1.42857rem;
+    margin-bottom: 2rem; }
+  .cta .btn {
+    font-size: 20px;
+    font-size: 1.42857rem; }
+
+.footer {
+  background: #1E150E;
+  color: #FFFFFF;
+  width: 100%; }
+  .footer .content {
+    content: " ";
+    display: table;
+    clear: both;
+    padding: 3rem 0;
+    margin: 0 auto; }
+    .footer .content .sitemap, .footer .content .social, .footer .content .copy {
+      float: left;
+      margin: 0 5rem; }
+      .footer .content .sitemap .title, .footer .content .social .title, .footer .content .copy .title {
+        display: inline-block;
+        border-bottom: 2px solid #F5A623;
+        margin-bottom: 1rem;
+        font-size: 16px;
+        font-size: 1.14286rem; }
+    .footer .content .sitemap .sites .site .link {
+      color: #FFFFFF; }
+    .footer .content .social .networks {
+      content: " ";
+      display: table;
+      clear: both; }
+      .footer .content .social .networks .network {
+        float: left;
+        margin-right: 1rem; }
+        .footer .content .social .networks .network:last-child {
+          margin: 0; }
+    .footer .content .copy {
+      text-align: center; }
+      .footer .content .copy .text {
+        margin-top: 1rem; }

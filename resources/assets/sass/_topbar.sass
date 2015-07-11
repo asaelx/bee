@@ -1,9 +1,28 @@
 .topbar
+    +clearfix
     background: $white
+    border-bottom: 4px solid $orange
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 5
     .logo-topbar
-        .img
+        float: left
+        position: relative
+        top: 0.8rem
+        left: 1rem
     .menu
+        float: right
         .list
+            +clearfix
             .option
+                float: left
                 .link
-                    color: $white
+                    display: block
+                    color: $orange
+                    text-transform: uppercase
+                    padding: 1.5rem 1rem
+                    &.active, &:hover
+                        background: $orange
+                        color: $white

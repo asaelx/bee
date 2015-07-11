@@ -1,6 +1,26 @@
 /* General */
 
+*
+    transition: all 0.3s ease
+
 html, body
     position: relative
     height: 100%
     width: 100%
+
+.btn
+    display: inline-block
+    border-radius: rem(3px)
+    background: $orange
+    color: $white
+    padding: 0.5rem 1rem
+
+.section
+    padding: 6rem 0
+    border-top: 4px solid $orange
+    & > .title
+        color: $gold
+        text-transform: uppercase
+        +font-size(28px)
+        text-align: center
+        margin-bottom: 3rem

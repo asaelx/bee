@@ -20,11 +20,15 @@
     </div>
     <div class="slider">
       <ul class="list">
-        <li class="slide"><img src="{{ url('img/slide1-bg.jpg') }}" class="bg"><img src="{{ url('img/logo-slide.png') }}" alt="BeeSurprised" class="logo-slide">
-          <div class="legend">Sorpréndete con los beneficios que ofrece la miel directo a tu casa.<a href="{{ url('/') }}" class="btn">Conoce más</a></div>
+        <li class="slide"><img src="{{ url('img/slide1-bg.jpg') }}" class="bg"><img src="{{ url('img/logo-slide.png') }}" alt="BeeSurprised" class="logo-slider">
+          <div class="legend">
+            <div class="text">Sorpréndete con los beneficios que ofrece la miel directo a tu casa.</div><a href="{{ url('/') }}" class="btn">Conoce más</a>
+          </div>
         </li>
         <li class="slide"><img src="{{ url('img/slide2-bg.jpg') }}" class="bg">
-          <div class="legend">Sorpréndete con los beneficios que ofrece la miel directo a tu casa.<a href="{{ url('/') }}" class="btn">Conoce más</a></div>
+          <div class="legend">
+            <div class="text">Sorpréndete con los beneficios que ofrece la miel directo a tu casa.</div><a href="{{ url('/') }}" class="btn">Conoce más</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -37,7 +41,7 @@
         <li class="step"><img src="{{ url('img/step2.png') }}" class="icon">
           <div class="text">Escoge un plan</div>
         </li>
-        <li class="step"><img src="{{ url('img/step2.png') }}" class="icon">
+        <li class="step"><img src="{{ url('img/step3.png') }}" class="icon">
           <div class="text">Recíbelo en tu casa</div>
         </li>
       </ul>
@@ -45,13 +49,13 @@
     <div class="boxes section">
       <h2 class="title">Las cajas mensuales</h2>
       <ul class="plans">
-        <li class="plan"><img {{ url('img/plan1.png') }} class="img">
+        <li class="plan"><img src="{{ url('img/plan1.png') }}" class="img">
           <h3 class="title">Salud y belleza</h3><a href="{{ url('/') }}" class="btn">Saber más</a>
         </li>
-        <li class="plan"><img {{ url('img/plan2.png') }} class="img">
+        <li class="plan"><img src="{{ url('img/plan1.png') }}" class="img">
           <h3 class="title">Consumo</h3><a href="{{ url('/') }}" class="btn">Saber más</a>
         </li>
-        <li class="plan"><img {{ url('img/plan3.png') }} class="img">
+        <li class="plan"><img src="{{ url('img/plan1.png') }}" class="img">
           <h3 class="title">Mix</h3><a href="{{ url('/') }}" class="btn">Saber más</a>
         </li>
       </ul>
@@ -73,28 +77,32 @@
         </li>
       </ul>
     </div>
-    <div class="cta section"><img src="{{ url('img/cta-bg.jpg') }}" class="bg">
+    <div class="cta section">
       <div class="text">Del productor hasta tu casa</div><a href="{{ url('/') }}" class="btn">Conoce más</a>
     </div>
     <footer class="footer">
-      <div class="sitemap">
-        <h3 class="title">Sitio</h3>
-        <ul class="sites">
-          <li class="site"><a href="{{ url('/') }}" class="link">Inicio</a></li>
-          <li class="site"><a href="{{ url('productos') }}" class="link">Productos</a></li>
-          <li class="site"><a href="{{ url('como-funciona') }}" class="link">Cómo funciona</a></li>
-          <li class="site"><a href="{{ url('blog') }}" class="link">Blog</a></li>
-          <li class="site"><a href="{{ url('contacto') }}" class="link">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="copy"><img src="{{ url('img/logo-footer.png') }}" class="logo-footer">&copy; 2015. BeeSurprised.</div>
-      <div class="social">
-        <h3 class="title">Redes sociales</h3>
-        <ul class="netwoks">
-          <li class="network"><a href="#" class="link"><img src="{{ url('img/fb.png') }}" class="img"></a></li>
-          <li class="network"><a href="#" class="link"><img src="{{ url('img/tw.png') }}" class="img"></a></li>
-          <li class="network"><a href="#" class="link"><img src="{{ url('img/in.png') }}" class="img"></a></li>
-        </ul>
+      <div class="content">
+        <div class="sitemap">
+          <h3 class="title">Sitio</h3>
+          <ul class="sites">
+            <li class="site"><a href="{{ url('/') }}" class="link">Inicio</a></li>
+            <li class="site"><a href="{{ url('productos') }}" class="link">Productos</a></li>
+            <li class="site"><a href="{{ url('como-funciona') }}" class="link">Cómo funciona</a></li>
+            <li class="site"><a href="{{ url('blog') }}" class="link">Blog</a></li>
+            <li class="site"><a href="{{ url('contacto') }}" class="link">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="copy"><img src="{{ url('img/logo-footer.png') }}" class="logo-footer">
+          <div class="text">&copy; 2015. BeeSurprised.</div>
+        </div>
+        <div class="social">
+          <h3 class="title">Redes sociales</h3>
+          <ul class="networks">
+            <li class="network"><a href="#" class="link"><img src="{{ url('img/fb.png') }}" class="img"></a></li>
+            <li class="network"><a href="#" class="link"><img src="{{ url('img/tw.png') }}" class="img"></a></li>
+            <li class="network"><a href="#" class="link"><img src="{{ url('img/in.png') }}" class="img"></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script type="text/javascript" src="{{ url('js/min/magic.min.js') }}"></script>
