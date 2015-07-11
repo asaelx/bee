@@ -4,3 +4,4 @@
 /.sass-cache
 Homestead.yaml
 .env
+deploy.sh
