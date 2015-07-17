@@ -15,12 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('informacion', function () {
+Route::get('cajas-de-beneficios', function () {
     return view('info');
 });
 
 Route::get('productos', function () {
-    return view('catalog');
+    return view('info');
 });
 
 Route::get('producto', function () {
