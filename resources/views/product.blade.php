@@ -32,7 +32,7 @@
             <div class="qty">Cantidad: 
               <input type="number" name="qty" value="1" min="1" max="10">
             </div>
-          </div><a href="#" class="buy btn">Añadir al carrito</a>
+          </div><a href="{{ url('carrito') }}" class="buy btn">Añadir al carrito</a>
         </div>
       </div>
       <div class="large-description">

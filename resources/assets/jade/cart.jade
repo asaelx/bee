@@ -7,25 +7,38 @@ block topbar
     include layout/topbar
     
 block content
-    .cart
+    .cart.section
         h1.title Carrito de compras
         
-        table.items
-            thead
-                tr
-                    th Cantidad
-                    th Producto
-                    th Precio
-                    th Total
-            tbody
-                tr
-                    td
-                        input(type="text", name="qty", value="1")
-                    td Prueba
-                    td $80
-                    td $80
-                    
-        a.btn.green(href="#") Pagar
+        .the-cart
+            table.items
+                thead
+                    tr
+                        th Cantidad
+                        th Producto
+                        th Precio
+                        th Total
+                tbody
+                    tr
+                        td
+                            input(type="number", name="qty", value="1")
+                        td Prueba
+                        td $80
+                        td $80
+                    tr
+                        td
+                            input(type="number", name="qty", value="1")
+                        td Prueba
+                        td $80
+                        td $80
+                    tr
+                        td
+                            input(type="number", name="qty", value="1")
+                        td Prueba
+                        td $80
+                        td $80
+                        
+            a.buy.btn(href="#") Pagar
         
 block footer
     include layout/footer

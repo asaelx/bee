@@ -492,6 +492,39 @@ html, body {
     font-size: 1.14286rem;
     line-height: 1.5; }
 
+.cart .the-cart {
+  content: " ";
+  display: table;
+  clear: both;
+  width: 60rem;
+  margin: 0 auto;
+  position: relative; }
+  .cart .the-cart .items {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-size: 1rem; }
+    .cart .the-cart .items th {
+      background: #F5A623;
+      color: #FFFFFF;
+      padding: 0.5rem 1rem;
+      text-align: left; }
+    .cart .the-cart .items td {
+      padding: 0.5rem 1rem; }
+      .cart .the-cart .items td input {
+        height: 3rem;
+        width: 3rem;
+        padding: 0.3rem;
+        border: 1px solid #F5A623;
+        border-radius: 0.21429rem;
+        text-align: center; }
+    .cart .the-cart .items tbody tr:nth-child(odd) {
+      background: rgba(236, 240, 241, 0.5); }
+  .cart .the-cart .buy {
+    float: right;
+    font-size: 14px;
+    font-size: 1rem; }
+
 .footer {
   background: #1E150E;
   border-top: 4px solid #F5A623;

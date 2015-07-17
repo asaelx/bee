@@ -1,0 +1,30 @@
+.cart
+    .the-cart
+        +clearfix
+        width: 60rem
+        margin: 0 auto
+        position: relative
+        .items
+            width: 100%
+            margin-bottom: 1rem
+            +font-size(14px)
+            th
+                background: $orange
+                color: $white
+                padding: 0.5rem 1rem
+                text-align: left
+            td
+                padding: 0.5rem 1rem
+                input
+                    height: 3rem
+                    width: 3rem
+                    padding: 0.3rem
+                    border: 1px solid $orange
+                    border-radius: rem(3px)
+                    text-align: center
+            tbody
+                tr:nth-child(odd)
+                    background: rgba($gray, 0.5)
+        .buy
+            float: right
+            +font-size(14px)

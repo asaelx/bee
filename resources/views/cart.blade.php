@@ -18,28 +18,46 @@
         </ul>
       </nav>
     </div>
-    <div class="cart">
+    <div class="cart section">
       <h1 class="title">Carrito de compras</h1>
-      <table class="items">
-        <thead>
-          <tr>
-            <th>Cantidad</th>
-            <th>Producto</th>
-            <th>Precio</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <input type="text" name="qty" value="1">
-            </td>
-            <td>Prueba</td>
-            <td>$80</td>
-            <td>$80</td>
-          </tr>
-        </tbody>
-      </table><a href="#" class="btn green">Pagar</a>
+      <div class="the-cart">
+        <table class="items">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="number" name="qty" value="1">
+              </td>
+              <td>Prueba</td>
+              <td>$80</td>
+              <td>$80</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" name="qty" value="1">
+              </td>
+              <td>Prueba</td>
+              <td>$80</td>
+              <td>$80</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="number" name="qty" value="1">
+              </td>
+              <td>Prueba</td>
+              <td>$80</td>
+              <td>$80</td>
+            </tr>
+          </tbody>
+        </table><a href="#" class="buy btn">Pagar</a>
+      </div>
     </div>
     <footer class="footer">
       <div class="content">

@@ -26,3 +26,7 @@ Route::get('catalogo', function () {
 Route::get('producto', function () {
     return view('product');
 });
+
+Route::get('carrito', function () {
+    return view('cart');
+});
