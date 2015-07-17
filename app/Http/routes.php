@@ -19,8 +19,8 @@ Route::get('cajas-de-beneficios', function () {
     return view('info');
 });
 
-Route::get('productos', function () {
-    return view('info');
+Route::get('catalogo', function () {
+    return view('catalog');
 });
 
 Route::get('producto', function () {

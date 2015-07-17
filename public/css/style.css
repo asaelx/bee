@@ -431,6 +431,7 @@ html, body {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
   .product .the-product .details {
+    padding-left: 1.5rem;
     float: left;
     width: calc(100% - 24rem); }
     .product .the-product .details .title {
@@ -485,7 +486,7 @@ html, body {
   margin: 0 auto;
   border-top: 1px solid #BD9655;
   padding-top: 1rem;
-  margin-top: 1rem; }
+  margin-top: 2rem; }
   .product .large-description p {
     font-size: 16px;
     font-size: 1.14286rem;

@@ -10,7 +10,7 @@
       <nav class="menu">
         <ul class="list">
           <li class="option"><a href="{{ url('/') }}" class="link">Inicio</a></li>
-          <li class="option"><a href="{{ url('productos') }}" class="link">Productos</a></li>
+          <li class="option"><a href="{{ url('cajas-de-beneficios') }}" class="link">Productos</a></li>
           <li class="option"><a href="{{ url('regalos') }}" class="link">Regalos</a></li>
           <li class="option"><a href="{{ url('como-funciona') }}" class="link">Cómo funciona</a></li>
           <li class="option"><a href="{{ url('blog') }}" class="link">Blog</a></li>
@@ -24,7 +24,7 @@
           <h2 class="title">Prueba</h2></a><a href="#" class="col monthly">
           <h2 class="title">Caja mensual</h2></a></div>
       <div class="other"><a href="#" class="col gifts">
-          <h2 class="title">Regalos - Próximamente</h2></a><a href="#" class="col choose">
+          <h2 class="title">Regalos - Próximamente</h2></a><a href="{{ url('catalogo') }}" class="col choose">
           <h2 class="title">Tú escoges - Compra sin suscribirte</h2></a></div>
     </div>
     <footer class="footer">
