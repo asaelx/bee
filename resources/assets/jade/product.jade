@@ -1,0 +1,48 @@
+extend layout/base
+
+block title
+    title BeeSurprised - Catálogo de productos
+    
+block topbar
+    include layout/topbar
+    
+block content
+    .product.section
+        .the-product
+            .photos
+                img.img(src="{{ url('img/products/02.jpg') }}")
+                //- ul.list
+                //-     li.item
+                //-         img.img(src="#")
+                //-     li.item
+                //-         img.img(src="#")
+                //-     li.item
+                //-         img.img(src="#")
+                //-     li.item
+                //-         img.img(src="#")
+            
+            .details
+                h1.title Nombre del producto
+                
+                .short-description
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit natus modi sed fugiat necessitatibus voluptatibus aut placeat nisi ex! Natus quo assumenda sit commodi officiis omnis labore iure. Autem.
+                
+                .inputs
+                    .price
+                        | Precio: 
+                        span $80
+                    |  — 
+                    .qty
+                        | Cantidad: 
+                        input(type="number", name="qty", value="1", min="1", max="10")
+                
+                a.buy.btn(href="#") Añadir al carrito
+            
+        .large-description
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?
+            
+            
+block footer
+    include layout/footer

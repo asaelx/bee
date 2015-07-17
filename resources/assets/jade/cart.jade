@@ -1,0 +1,31 @@
+extend layout/base
+
+block title
+    title BeeSurprised - Carrito de compras
+    
+block topbar
+    include layout/topbar
+    
+block content
+    .cart
+        h1.title Carrito de compras
+        
+        table.items
+            thead
+                tr
+                    th Cantidad
+                    th Producto
+                    th Precio
+                    th Total
+            tbody
+                tr
+                    td
+                        input(type="text", name="qty", value="1")
+                    td Prueba
+                    td $80
+                    td $80
+                    
+        a.btn.green(href="#") Pagar
+        
+block footer
+    include layout/footer

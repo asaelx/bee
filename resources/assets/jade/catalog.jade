@@ -1,0 +1,44 @@
+extend layout/base
+
+block title
+    title BeeSurprised - Catálogo de productos
+    
+block topbar
+    include layout/topbar
+    
+block content
+    .catalog.section
+        h1.title Catálogo de productos
+        
+        ul.products
+            li.product
+                img.img(src="{{ url('img/products/01.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/02.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/03.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/04.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/05.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/06.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/07.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/08.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/09.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/10.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/11.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/12.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/13.jpg') }}")
+            li.product
+                img.img(src="{{ url('img/products/14.jpg') }}")
+                
+block footer
+    include layout/footer

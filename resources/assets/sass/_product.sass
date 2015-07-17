@@ -1,0 +1,74 @@
+.product
+    .the-product
+        +clearfix
+        width: 60rem
+        margin: 0 auto
+        .photos
+            float: left
+            height: 24rem
+            width: 24rem
+            overflow: hidden
+            .img
+                position: relative
+                height: 100%
+                left: 50%
+                transform: translateX(-50%)
+
+        .details
+            float: left
+            width: calc(100% - 24rem)
+            .title
+                color: $gold
+                text-align: left
+                text-transform: uppercase
+                +font-size(20px)
+                padding-bottom: 0.5rem
+                margin-bottom: 1rem
+                border-bottom: 1px solid $gold
+
+            .short-description
+                padding-bottom: 1rem
+                margin-bottom: 1rem
+                border-bottom: 1px solid $gold
+                p
+                    +font-size(16px)
+
+            .inputs
+                margin-bottom: 1rem
+                padding-bottom: 1rem
+                border-bottom: 1px solid $gold
+                text-align: right
+                .price
+                    display: inline-block
+                    +font-size(14px)
+                    font-weight: 800
+                    span
+                        display: inline-block
+                        padding: 0.65rem
+                        background: $green
+                        color: $white
+                        border-radius: rem(3px)
+                .qty
+                    display: inline-block
+                    +font-size(14px)
+                    input
+                        height: 2.5rem
+                        width: 2.5rem
+                        padding: 0.2rem
+                        text-align: center
+                        border: 1px solid $green
+                        border-radius: rem(3px)
+
+            .buy
+                float: right
+                +font-size(18px)
+
+    .large-description
+        width: 60rem
+        margin: 0 auto
+        border-top: 1px solid $gold
+        padding-top: 1rem
+        margin-top: 1rem
+        p
+            +font-size(16px)
+            line-height: 1.5

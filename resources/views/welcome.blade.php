@@ -33,7 +33,7 @@
       </ul>
     </div>
     <div class="how section">
-      <h2 class="title">Cómo funciona</h2>
+      <h2 class="title">Cómo funcionan las cajas de subscripción</h2>
       <ul class="steps">
         <li class="step"><img src="{{ url('img/step1.png') }}" class="icon">
           <div class="text">Escoge un tema</div>

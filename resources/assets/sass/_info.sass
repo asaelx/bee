@@ -1,0 +1,50 @@
+.info
+    .col
+        display: block
+        float: left
+        height: 24rem
+        overflow: hidden
+        position: relative
+        .title
+            text-align: center
+            text-transform: uppercase
+            text-shadow: 1px 1px 2px rgba($black, 0.6)
+            color: $white
+            +font-size(20px)
+            position: absolute
+            top: 1rem
+            width: 100%
+        .img
+            pointer-events: none
+            position: relative
+            min-height: 100%
+            min-width: 100%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+    .types
+        +clearfix
+        width: 100%
+        .col
+            &.trial
+                width: 30%
+            &.monthly
+                width: 70%
+            &:hover
+                .img
+                    transform: translate(-50%, -50%) scale(1.1)
+                    +opacity(0.7)
+
+    .other
+        +clearfix
+        width: 100%
+        .col
+            &.gifts
+                width: 50%
+            &.choose
+                width: 50%
+            &:hover
+                .img
+                    transform: translate(-50%, -50%) scale(1.1)
+                    +opacity(0.7)
