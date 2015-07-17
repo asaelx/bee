@@ -20,11 +20,11 @@
     </div>
     <div class="info section">
       <h1 class="title">Cajas de beneficios</h1>
-      <div class="types"><a href="#" class="col trial"><img src="{{ url('img/products/05.jpg') }}" class="img">
-          <h2 class="title">Prueba</h2></a><a href="#" class="col monthly"><img src="{{ url('img/box.jpg') }}" class="img">
+      <div class="types"><a href="#" class="col trial">
+          <h2 class="title">Prueba</h2></a><a href="#" class="col monthly">
           <h2 class="title">Caja mensual</h2></a></div>
-      <div class="other"><a href="#" class="col gifts"><img src="{{ url('img/products/11.jpg') }}" class="img">
-          <h2 class="title">Regalos - Próximamente</h2></a><a href="#" class="col choose"><img src="{{ url('img/box.jpg') }}" class="img">
+      <div class="other"><a href="#" class="col gifts">
+          <h2 class="title">Regalos - Próximamente</h2></a><a href="#" class="col choose">
           <h2 class="title">Tú escoges - Compra sin suscribirte</h2></a></div>
     </div>
     <footer class="footer">

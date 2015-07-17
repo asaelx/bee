@@ -343,7 +343,10 @@ html, body {
     font-size: 20px;
     font-size: 1.42857rem;
     position: absolute;
-    top: 1rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 100%; }
   .info .col .img {
     pointer-events: none;
@@ -360,8 +363,10 @@ html, body {
   clear: both;
   width: 100%; }
   .info .types .col.trial {
+    background: #E67E22;
     width: 30%; }
   .info .types .col.monthly {
+    background: #F1C40F;
     width: 70%; }
   .info .types .col:hover .img {
     -webkit-transform: translate(-50%, -50%) scale(1.1);
@@ -375,8 +380,10 @@ html, body {
   clear: both;
   width: 100%; }
   .info .other .col.gifts {
+    background: #8E44AD;
     width: 50%; }
   .info .other .col.choose {
+    background: #3498DB;
     width: 50%; }
   .info .other .col:hover .img {
     -webkit-transform: translate(-50%, -50%) scale(1.1);
