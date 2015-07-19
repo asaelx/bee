@@ -89,10 +89,13 @@ html, body {
 
 .btn {
   display: inline-block;
+  border: 0;
   border-radius: 0.21429rem;
   background: #F5A623;
   color: #FFFFFF;
   padding: 0.5rem 1rem; }
+  .btn:hover {
+    cursor: pointer; }
 
 .section {
   padding: 6rem 0;
@@ -524,6 +527,36 @@ html, body {
     float: right;
     font-size: 14px;
     font-size: 1rem; }
+
+.checkout .checkout-form {
+  content: " ";
+  display: table;
+  clear: both;
+  width: 60rem;
+  margin: 0 auto; }
+  .checkout .checkout-form .shipping {
+    padding-right: 1rem; }
+  .checkout .checkout-form .payment {
+    padding-left: 1rem; }
+  .checkout .checkout-form .shipping, .checkout .checkout-form .payment {
+    float: left;
+    width: 50%;
+    margin-bottom: 1rem; }
+    .checkout .checkout-form .shipping .title, .checkout .checkout-form .payment .title {
+      color: #BD9655;
+      font-size: 16px;
+      font-size: 1.14286rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
+  .checkout .checkout-form .label {
+    width: 100%; }
+  .checkout .checkout-form .input {
+    border: 1px solid #F5A623;
+    border-radius: 0.21429rem;
+    padding: 0.5rem 1rem;
+    width: 100%; }
+  .checkout .checkout-form .btn {
+    float: right; }
 
 .footer {
   background: #1E150E;

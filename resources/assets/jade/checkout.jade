@@ -1,0 +1,46 @@
+extend layout/base
+
+block title
+    title BeeSurprised - Pago
+    
+block topbar
+    include layout/topbar
+    
+block content
+    .checkout.section
+        h1.title Información de envío y pago
+        
+        | {!! Form::open(['url' => '/', 'class' => 'checkout-form']) !!}
+        .shipping
+            h2.title Información de envío
+            .group
+                | {!! Form::label('shipping_name', 'Nombre', ['class' => 'label']) !!}
+                | {!! Form::text('shipping_name', null, ['class' => 'input']) !!}
+            .group
+                | {!! Form::label('shipping_address', 'Domicilio', ['class' => 'label']) !!}
+                | {!! Form::text('shipping_address', null, ['class' => 'input']) !!}
+            .group
+                | {!! Form::label('city', 'Ciudad', ['class' => 'label']) !!}
+                | {!! Form::text('city', null, ['class' => 'input']) !!}
+            .group
+                | {!! Form::label('zipcode', 'Código Postal', ['class' => 'label']) !!}
+                | {!! Form::text('zipcode', null, ['class' => 'input']) !!}
+        .payment
+            h2.title Información de pago
+            .group
+                | {!! Form::label('card_name', 'Nombre del titular de la tarjeta', ['class' => 'label']) !!}
+                | {!! Form::text('card_name', null, ['class' => 'input']) !!}
+            .group
+                | {!! Form::label('card_number', 'Número de tarjeta', ['class' => 'label']) !!}
+                | {!! Form::text('card_number', null, ['class' => 'input']) !!}
+            .group
+                | {!! Form::label('card_exp', 'Fecha de caducidad', ['class' => 'label']) !!}
+                | {!! Form::text('card_exp', null, ['class' => 'input']) !!}
+            .group
+                | {!! Form::label('card_cvc', 'CVC', ['class' => 'label']) !!}
+                | {!! Form::text('card_cvc', null, ['class' => 'input']) !!}
+        | {!! Form::submit('Pagar', ['class' => 'btn']) !!}
+        | {!! Form::close() !!}
+    
+block footer
+    include layout/footer

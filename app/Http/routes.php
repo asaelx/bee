@@ -30,3 +30,7 @@ Route::get('producto', function () {
 Route::get('carrito', function () {
     return view('cart');
 });
+
+Route::get('pago', function () {
+    return view('checkout');
+});
