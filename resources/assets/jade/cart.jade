@@ -19,26 +19,54 @@ block content
                         th Precio
                         th Total
                 tbody
-                    tr
+                    tr.row
                         td
-                            input(type="number", name="qty", value="1")
+                            a.delete(href="#") X
+                            input.input_qty(type="number", name="qty", value="2", min="1", max="10")
                         td Prueba
-                        td $80
-                        td $80
-                    tr
+                        td 
+                            span.unit_price
+                                | $
+                                span 80
+                        td 
+                            span.unit_total
+                                | $
+                                span 80
+                    tr.row
                         td
-                            input(type="number", name="qty", value="1")
+                            a.delete(href="#") X
+                            input.input_qty(type="number", name="qty", value="1", min="1", max="10")
                         td Prueba
-                        td $80
-                        td $80
-                    tr
+                        td 
+                            span.unit_price
+                                | $
+                                span 80
+                        td 
+                            span.unit_total
+                                | $
+                                span 80
+                    tr.row
                         td
-                            input(type="number", name="qty", value="1")
+                            a.delete(href="#") X
+                            input.input_qty(type="number", name="qty", value="1", min="1", max="10")
                         td Prueba
-                        td $80
-                        td $80
+                        td 
+                            span.unit_price
+                                | $
+                                span 80
+                        td 
+                            span.unit_total
+                                | $
+                                span 80
+                    tr
+                        td(colspan="3")
+                            | Total
+                        td 
+                            span.total_price
+                                | $
+                                span 240
                         
-            a.buy.btn(href="#") Pagar
+            a.buy.btn(href="{{ url('pago') }}") Siguiente
         
 block footer
     include layout/footer

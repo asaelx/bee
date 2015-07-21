@@ -6,6 +6,10 @@ $(function(){
         dots: true
     });
 
+    $('.product-slider').unslider({
+        dots: true
+    });
+
     var sections = $('.section');
 
     if(sections.length){
@@ -36,6 +40,63 @@ $(function(){
         }
 
         $(document).on('scroll', onScroll);
+    }
+
+    // Cart
+    var cart = $('.cart');
+
+    if(cart.length){
+        var inputs_qty = $('.input_qty'),
+            rows = $('.the-cart').find('.row');
+
+        function calculate_unit_price(row){
+
+            var input_qty = row.find('.input_qty'),
+                qty = parseFloat(input_qty.val()),
+                unit_price = parseFloat(row.find('.unit_price').find('span').text()),
+                unit_total = row.find('.unit_total').find('span'),
+                unit_result = 0;
+
+            unit_result = unit_price * qty;
+
+            unit_total.text(unit_result);
+        }
+
+        function calculate_total_price(){
+            var unit_totals = $('.unit_total'),
+                total_price = $('.total_price').find('span'),
+                total = 0;
+
+            unit_totals.each(function(i, el){
+                var $unit_total = $(el),
+                    price = parseFloat($unit_total.find('span').text());
+
+                total = total + price;
+            });
+
+            total_price.text(total);
+        }
+
+        rows.each(function(i, el){
+            var $row = $(el);
+
+            calculate_unit_price($row);
+
+        });
+
+        calculate_total_price();
+
+        inputs_qty.on('change', function(){
+            var $this = $(this),
+                $row = $this.closest('.row');
+
+            calculate_unit_price($row);
+            calculate_total_price();
+        });
+
+        // TODO
+        // Deal with deleting rows
+
     }
 
 });

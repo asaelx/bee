@@ -54,7 +54,7 @@
           {!! Form::text('card_exp', null, ['class' => 'input']) !!}
         </div>
         <div class="group">
-          {!! Form::label('card_cvc', 'CVC', ['class' => 'label']) !!}
+          {!! Form::label('card_cvc', 'Código de seguridad', ['class' => 'label']) !!}
           {!! Form::text('card_cvc', null, ['class' => 'input']) !!}
         </div>
       </div>{!! Form::submit('Pagar', ['class' => 'btn']) !!}

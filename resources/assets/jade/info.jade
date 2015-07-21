@@ -21,10 +21,14 @@ block content
         .other
             a.col.gifts(href="#")
                 //- img.img(src="{{ url('img/products/11.jpg') }}")
-                h2.title Regalos - Próximamente
+                h2.title
+                    | Regalos
+                    span Próximamente
             a.col.choose(href="{{ url('catalogo') }}")
                 //- img.img(src="{{ url('img/box.jpg') }}")
-                h2.title Tú escoges - Compra sin suscribirte
+                h2.title 
+                    | Tú escoges
+                    span Compra sin suscribirte
 
 block footer
     include layout/footer

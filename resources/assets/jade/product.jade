@@ -10,16 +10,19 @@ block content
     .product.section
         .the-product
             .photos
-                img.img(src="{{ url('img/products/02.jpg') }}")
-                //- ul.list
-                //-     li.item
-                //-         img.img(src="#")
-                //-     li.item
-                //-         img.img(src="#")
-                //-     li.item
-                //-         img.img(src="#")
-                //-     li.item
-                //-         img.img(src="#")
+                span.price $80
+                .product-slider
+                    ul.list
+                        li.item
+                            img.img(src="{{ url('img/products/02.jpg') }}")
+                        li.item
+                            img.img(src="{{ url('img/products/03.jpg') }}")
+                        li.item
+                            img.img(src="{{ url('img/products/04.jpg') }}")
+                        li.item
+                            img.img(src="{{ url('img/products/05.jpg') }}")
+                        li.item
+                            img.img(src="{{ url('img/products/06.jpg') }}")
             
             .details
                 h1.title Nombre del producto
@@ -27,18 +30,15 @@ block content
                 .short-description
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit natus modi sed fugiat necessitatibus voluptatibus aut placeat nisi ex! Natus quo assumenda sit commodi officiis omnis labore iure. Autem.
                 
-                .inputs
-                    .price
-                        | Precio: 
-                        span $80
-                    |  — 
+                .actions
                     .qty
                         | Cantidad: 
                         input(type="number", name="qty", value="1", min="1", max="10")
-                
-                a.buy.btn(href="{{ url('carrito') }}") Añadir al carrito
+                    
+                    a.buy.btn(href="{{ url('carrito') }}") Añadir al carrito
             
         .large-description
+            h2.title Descripción
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?

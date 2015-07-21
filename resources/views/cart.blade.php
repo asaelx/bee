@@ -31,32 +31,36 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <input type="number" name="qty" value="1">
+            <tr class="row">
+              <td><a href="#" class="delete">X</a>
+                <input type="number" name="qty" value="2" min="1" max="10" class="input_qty">
               </td>
               <td>Prueba</td>
-              <td>$80</td>
-              <td>$80</td>
+              <td> <span class="unit_price">$<span>80</span></span></td>
+              <td> <span class="unit_total">$<span>80</span></span></td>
+            </tr>
+            <tr class="row">
+              <td><a href="#" class="delete">X</a>
+                <input type="number" name="qty" value="1" min="1" max="10" class="input_qty">
+              </td>
+              <td>Prueba</td>
+              <td> <span class="unit_price">$<span>80</span></span></td>
+              <td> <span class="unit_total">$<span>80</span></span></td>
+            </tr>
+            <tr class="row">
+              <td><a href="#" class="delete">X</a>
+                <input type="number" name="qty" value="1" min="1" max="10" class="input_qty">
+              </td>
+              <td>Prueba</td>
+              <td> <span class="unit_price">$<span>80</span></span></td>
+              <td> <span class="unit_total">$<span>80</span></span></td>
             </tr>
             <tr>
-              <td>
-                <input type="number" name="qty" value="1">
-              </td>
-              <td>Prueba</td>
-              <td>$80</td>
-              <td>$80</td>
-            </tr>
-            <tr>
-              <td>
-                <input type="number" name="qty" value="1">
-              </td>
-              <td>Prueba</td>
-              <td>$80</td>
-              <td>$80</td>
+              <td colspan="3">Total</td>
+              <td> <span class="total_price">$<span>240</span></span></td>
             </tr>
           </tbody>
-        </table><a href="#" class="buy btn">Pagar</a>
+        </table><a href="{{ url('pago') }}" class="buy btn">Siguiente</a>
       </div>
     </div>
     <footer class="footer">

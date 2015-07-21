@@ -7,69 +7,110 @@
             float: left
             height: 24rem
             width: 24rem
-            overflow: hidden
-            .img
+            position: relative
+            .price
+                position: absolute
+                display: inline-block
+                +font-size(16px)
+                font-weight: 800
+                padding: 0.65rem
+                background: $green
+                color: $white
+                border-radius: rem(3px)
+                top: 0.5rem
+                right: -0.8rem
+                z-index: 2
+            .product-slider
                 position: relative
+                overflow: auto
                 height: 100%
-                left: 50%
-                transform: translateX(-50%)
+                .list
+                    height: 100%
+                    width: 100%
+                    .item
+                        border-radius: rem(3px)
+                        float: left
+                        height: 100%
+                        width: 100%
+                        overflow: hidden
+                        .img
+                            position: relative
+                            height: 100%
+                            left: 50%
+                            transform: translateX(-50%)
+                .dots
+                    +clearfix
+                    position: absolute
+                    bottom: 1rem
+                    left: 50%
+                    transform: translateX(-50%)
+                    .dot
+                        float: left
+                        text-indent: -999999px
+                        display: block
+                        height: 0.8rem
+                        width: 0.8rem
+                        background: $white
+                        border: 2px solid $orange
+                        border-radius: 50%
+                        margin: 0 0.2rem
+                        &.active
+                            background: $orange
+                        &:hover
+                            cursor: pointer
 
         .details
-            padding-left: 1.5rem
+            padding-left: 2rem
             float: left
             width: calc(100% - 24rem)
             .title
                 color: $gold
                 text-align: left
                 text-transform: uppercase
-                +font-size(20px)
+                +font-size(22px)
                 padding-bottom: 0.5rem
-                margin-bottom: 1rem
-                border-bottom: 1px solid $gold
+                // margin-bottom: 1rem
+                // border-bottom: 1px solid $gold
 
             .short-description
                 padding-bottom: 1rem
                 margin-bottom: 1rem
                 border-bottom: 1px solid $gold
                 p
-                    +font-size(16px)
-
-            .inputs
-                margin-bottom: 1rem
-                padding-bottom: 1rem
-                border-bottom: 1px solid $gold
-                text-align: right
-                .price
-                    display: inline-block
                     +font-size(14px)
-                    font-weight: 800
-                    span
-                        display: inline-block
-                        padding: 0.65rem
-                        background: $green
-                        color: $white
-                        border-radius: rem(3px)
+                    line-height: 1.5
+
+            .actions
+                text-align: right
                 .qty
                     display: inline-block
                     +font-size(14px)
+                    margin-right: 1rem
                     input
                         height: 2.5rem
-                        width: 2.5rem
-                        padding: 0.2rem
+                        min-width: 2.5rem
+                        padding: 0.1rem 0.2rem
                         text-align: center
-                        border: 1px solid $green
+                        border: 2px solid $orange
                         border-radius: rem(3px)
+                        text-align: center
+                        &:focus
+                            border: 2px solid $green
 
-            .buy
-                float: right
-                +font-size(18px)
+                .buy
+                    +font-size(14px)
 
     .large-description
         width: 60rem
         margin: 0 auto
-        border-top: 1px solid $gold
-        padding-top: 1rem
+        // border-top: 1px solid $gold
+        // padding-top: 1rem
         margin-top: 2rem
+        .title
+            color: $gold
+            +font-size(14px)
+            text-transform: uppercase
+            margin-bottom: 0.5rem
         p
-            +font-size(16px)
+            +font-size(14px)
             line-height: 1.5

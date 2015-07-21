@@ -24,8 +24,11 @@
           <h2 class="title">Prueba</h2></a><a href="#" class="col monthly">
           <h2 class="title">Caja mensual</h2></a></div>
       <div class="other"><a href="#" class="col gifts">
-          <h2 class="title">Regalos - Próximamente</h2></a><a href="{{ url('catalogo') }}" class="col choose">
-          <h2 class="title">Tú escoges - Compra sin suscribirte</h2></a></div>
+          <h2 class="title">Regalos<span>Próximamente</span></h2></a><a href="{{ url('catalogo') }}" class="col choose">
+          <h2 class="title">
+             
+            Tú escoges<span>Compra sin suscribirte</span>
+          </h2></a></div>
     </div>
     <footer class="footer">
       <div class="content">

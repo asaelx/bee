@@ -20,22 +20,31 @@
     </div>
     <div class="product section">
       <div class="the-product">
-        <div class="photos"><img src="{{ url('img/products/02.jpg') }}" class="img">
+        <div class="photos"><span class="price">$80</span>
+          <div class="product-slider">
+            <ul class="list">
+              <li class="item"><img src="{{ url('img/products/02.jpg') }}" class="img"></li>
+              <li class="item"><img src="{{ url('img/products/03.jpg') }}" class="img"></li>
+              <li class="item"><img src="{{ url('img/products/04.jpg') }}" class="img"></li>
+              <li class="item"><img src="{{ url('img/products/05.jpg') }}" class="img"></li>
+              <li class="item"><img src="{{ url('img/products/06.jpg') }}" class="img"></li>
+            </ul>
+          </div>
         </div>
         <div class="details">
           <h1 class="title">Nombre del producto</h1>
           <div class="short-description">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit natus modi sed fugiat necessitatibus voluptatibus aut placeat nisi ex! Natus quo assumenda sit commodi officiis omnis labore iure. Autem.</p>
           </div>
-          <div class="inputs">
-            <div class="price">Precio: <span>$80</span></div> — 
+          <div class="actions">
             <div class="qty">Cantidad: 
               <input type="number" name="qty" value="1" min="1" max="10">
-            </div>
-          </div><a href="{{ url('carrito') }}" class="buy btn">Añadir al carrito</a>
+            </div><a href="{{ url('carrito') }}" class="buy btn">Añadir al carrito</a>
+          </div>
         </div>
       </div>
       <div class="large-description">
+        <h2 class="title">Descripción</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque minus eius, nemo asperiores, earum tenetur rerum quis debitis aspernatur facere. Dignissimos accusantium, ipsum iure! Eum error deleniti assumenda exercitationem?</p>
